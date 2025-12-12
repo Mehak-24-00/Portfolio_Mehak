@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehak Kumar Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+        .header {
+            width: 100%;
+            background: #fff;
+            padding: 2em 0 1em 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            border-bottom: 1px solid #eee;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            background: #fff;
+            padding-bottom: 1em;
+            margin-bottom: 2em;
+        }
+        .tab {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #222;
+            text-decoration: none;
+            padding: 0.5em 1.5em;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .tab:hover {
+            background: #f0f0f0;
+        }
+        .subtabs {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            background: #fff;
+            padding-bottom: 1em;
+            margin-bottom: 2em;
+        }
+        .subtab {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #222;
+            text-decoration: none;
+            padding: 0.4em 1.2em;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .subtab:hover {
+            background: #f0f0f0;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .project-item {
+            text-align: center;
+        }
+        .project-image {
+            width: 100%;
+            height: 280px; /* Consistent height for all boxes */
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            margin-bottom: 1em;
+            background: #eaeaea; /* Placeholder background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Portfolio</div>
+    <div class="tabs">
+        <a href="#about" class="tab active">About</a>
+        <a href="#work" class="tab">Work</a>
+        <a href="#contact" class="tab">Contact</a>
+    </div>
+    <div id="work-subtabs" style="display:none;">
+        <div class="subtabs">
+            <a href="#industrial" class="subtab">Industrial</a>
+            <a href="#digital" class="subtab active-sub">Digital</a>
+            <a href="#spatial" class="subtab">Spatial</a>
+        </div>
+    </div>
+
+    <div id="about" class="tab-content" style="display:block;">
+        <section class="about" style="display: flex; align-items: flex-start; gap: 3em; margin: 2em 3em; padding-bottom: 3em;">
+            <div style="min-width:150px;">
+                <div style="font-weight:700; color:#222; margin-bottom:1em; font-size:0.9em;">MEHAK KUMAR</div>
+                <div style="margin-bottom:0.5em;"><a href="#" style="font-weight:700; color:#222; text-decoration:none; font-size:0.9em;">RESUME</a></div>
+                <div style="margin-bottom:2em;"><a href="#" style="font-weight:700; color:#222; text-decoration:none; font-size:0.9em;">CONTACT</a></div>
+            </div>
+            <div style="flex:1; color:#222; line-height:1.6;">
+                <p style="margin-top:0;">Design offers a glimpse into the future. As a growth designer, I extract futuristic concepts and channel them into tangible realities through the blend of visual design, technology, and business strategy.</p>
+                <p>Previously at Bajaj Electricals Ltd. designing smart home appliances for the PAN Indian Market from conceptualization to launching products.</p>
+            </div>
+            <div style="min-width:200px; height:250px; background:#ddd; border-radius:8px;"></div>
+        </section>
+        
+        <div style="display:flex; gap:3em; margin:3em 3em; border-bottom:2px solid #222; padding-bottom:0;">
+            <a href="#design" style="font-size:2.5em; font-weight:700; color:#222; text-decoration:none; position:relative;">● Design</a>
+            <a href="#make" style="font-size:2.5em; font-weight:700; color:#ccc; text-decoration:none;">Innovate</a>
+            <a href="#illustrate" style="font-size:2.5em; font-weight:700; color:#ccc; text-decoration:none;">Develop</a>
+            <a href="#animate" style="font-size:2.5em; font-weight:700; color:#ccc; text-decoration:none;">Launch</a>
+        </div>
+        
+        <div style="margin:2em 3em;">
+            <div style="display:flex; gap:2em; padding:1.5em 0; border-bottom:1px solid #ddd;">
+                <div style="flex:0 0 150px; font-weight:600; color:#222;">Pura</div>
+                <div style="flex:1; color:#222;">Upcycled Project</div>
+                <div style="flex:0 0 150px; color:#999;">Published</div>
+            </div>
+            <div style="display:flex; gap:2em; padding:1.5em 0; border-bottom:1px solid #ddd;">
+                <div style="flex:0 0 150px; font-weight:600; color:#222;">Studio Project</div>
+                <div style="flex:1; color:#222;">Responsive Interface for Communication for Disabled Patients</div>
+                <div style="flex:0 0 150px; color:#999;">Coming soon</div>
+            </div>
+            <div style="display:flex; gap:2em; padding:1.5em 0; border-bottom:1px solid #ddd;">
+                <div style="flex:0 0 150px; font-weight:600; color:#222;">Bajaj Electricals</div>
+                <div style="flex:1; color:#222;">Smart Ceiling Fans with New Class of CMF</div>
+                <div style="flex:0 0 150px; color:#999;">Password needed</div>
+            </div>
+            <div style="display:flex; gap:2em; padding:1.5em 0; border-bottom:1px solid #ddd;">
+                <div style="flex:0 0 150px; font-weight:600; color:#222;">Morphy Richards</div>
+                <div style="flex:1; color:#222;">Smart Appliances</div>
+                <div style="flex:0 0 150px; color:#999;">Password needed</div>
+            </div>
+            <div style="display:flex; gap:2em; padding:1.5em 0; border-bottom:1px solid #ddd;">
+                <div style="flex:0 0 150px; font-weight:600; color:#222;">Brand X</div>
+                <div style="flex:1; color:#222;">Circular Design Medical Subscription Box</div>
+                <div style="flex:0 0 150px; color:#999;">Published</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="tab-content" style="display:none;">
+        <div style="margin: 2em 3em;">
+            </div>
+    </div>
+
+    <div id="digital" class="tab-content" style="display:none;">
+        <div style="margin: 2em 3em;">
+            <div class="project-grid">
+                <a href="https://editor.p5js.org/Mehak_Kumar/full/SHvBb0y-A" class="project-item" style="text-decoration:none;">
+                    <img src="Data Portrait.png" 
+                         class="project-image" 
+                         style="background: none;" 
+                         alt="Data Portrait">
+                    <h3 style="margin: 1em 0 0 0; color: #222; font-weight: 600;">Data Portrait</h3>
+                </a>
+                <a href="https://editor.p5js.org/Mehak_Kumar/full/FO6K1cYAz" class="project-item" style="text-decoration:none;">
+                    <img src="Optical Illusion.png" 
+                         class="project-image" 
+                         style="background: none; object-fit: cover;"
+                         alt="Optical Illusion">
+                    <h3 style="margin: 1em 0 0 0; color: #000000; font-weight: 600;">Optical Illusion</h3>
+                </a>
+                <a href="https://editor.p5js.org/Mehak_Kumar/full/9_K2R9xMC" class="project-item" style="text-decoration:none;">
+                    <img src="Game.png" 
+                         class="project-image" 
+                         style="background: none; object-fit: cover;"
+                         alt="Game">
+                    <h3 style="margin: 1em 0 0 0; color: #222; font-weight: 600;">Game</h3>
+                </a>
+                <a href="https://editor.p5js.org/Mehak_Kumar/full/-jEno4LlD" class="project-item" style="text-decoration:none;">
+                    <img src="Experimental Clock.png" 
+                         class="project-image" 
+                         style="background: none; object-fit: cover;"
+                         alt="Experimental Clock">
+                    <h3 style="margin: 1em 0 0 0; color: #222; font-weight: 600;">Experimental Clock</h3>
+                </a>
+                <a href="https://editor.p5js.org/Mehak_Kumar/full/bRaYfOqKz" class="project-item" style="text-decoration:none;">
+                    <img src="Face Generator.png" 
+                         class="project-image" 
+                         style="background: none; object-fit: cover;"
+                         alt="Face Generator">
+                    <h3 style="margin: 1em 0 0 0; color: #222; font-weight: 600;">Face Generator</h3>
+                </a>
+                <a href="https://editor.p5js.org/Mehak_Kumar/full/WjfUYgccy" class="project-item" style="text-decoration:none;">
+                    <img src="Lost Found.png" 
+                         class="project-image" 
+                         style="background: none; object-fit: cover;"
+                         alt="Lost Found">
+                    <h3 style="margin: 1em 0 0 0; color: #222; font-weight: 600;">Lost and Found</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="industrial" class="tab-content" style="display:none;">
+        <div style="margin: 2em 3em;">
+            <p>Coming Soon.</p>
+        </div>
+    </div>
+
+    <div id="spatial" class="tab-content" style="display:none;">
+        <div style="margin: 2em 3em;">
+            <p>Coming Soon.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="tab-content" style="display:none;">
+        <div class="contact-container">
+            <div class="contact-card">
+                                <div class="contact-left">
+                    <div style="
+                         width: 180px; 
+                         height: 140px; 
+                         /* Using a custom SVG for the envelope style */
+                         background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80"><rect x="10" y="20" width="80" height="60" rx="5" fill="#f0f0f0"/><polygon points="10,20 50,45 90,20" fill="#6a5acd"/><rect x="40" y="30" width="20" height="20" rx="3" fill="#6a5acd" opacity="0.1" /><polygon points="10,20 50,45 90,20" fill="#6a5acd" /></svg>;
+                         
+                    </div>
+                </div>
+                                <div class="contact-form-side">
+                    <h3 class="contact-title">Get in touch</h3>
+                    <form>
+                                                <input type="text" class="form-input" placeholder="👤 Name">
+                        <input type="email" class="form-input" placeholder="✉️ Email">
+                        <textarea class="form-textarea" placeholder="Message"></textarea>
+                        <button type="submit" class="form-button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Store all content sections
+        const tabContents = document.querySelectorAll('.tab-content');
+        // Store all main tabs
+        const mainTabs = document.querySelectorAll('.tab');
+        // Store all sub-tabs
+        const subTabs = document.querySelectorAll('.subtab');
+        const workSubtabsContainer = document.getElementById('work-subtabs');
+
+        // Function to hide all content
+        function hideAllContent() {
+            tabContents.forEach(content => {
+                content.style.display = 'none';
+            });
+            workSubtabsContainer.style.display = 'none';
+        }
+
+        // Handle Main Tab clicks
+        mainTabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const tabId = tab.getAttribute('href').substring(1);
+                
+                hideAllContent();
+                document.getElementById(tabId).style.display = 'block';
+
+                // Show sub-tabs if 'Work' is clicked
+                if(tabId === 'work') {
+                    // Default to showing the 'digital' sub-tab content when 'Work' is clicked
+                    document.getElementById('digital').style.display = 'block';
+                    workSubtabsContainer.style.display = 'block';
+                }
+            });
+        });
+
+        // Handle Sub-Tab clicks
+        subTabs.forEach(subtab => {
+            subtab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const tabId = subtab.getAttribute('href').substring(1);
+                
+                // Hide main content (except for the sub-tab container)
+                document.getElementById('work').style.display = 'none';
+                document.getElementById('industrial').style.display = 'none';
+                document.getElementById('digital').style.display = 'none';
+                document.getElementById('spatial').style.display = 'none';
+
+                // Display the selected sub-tab content
+                document.getElementById(tabId).style.display = 'block';
+
+                // Optional: Update active class for visual indication
+                subTabs.forEach(s => s.classList.remove('active-sub'));
+                subtab.classList.add('active-sub');
+            });
+        });
+
+        // Initial setup for default visible tab (About)
+        hideAllContent();
+        document.getElementById('about').style.display = 'block';
+    </script>
+</body>
+</html>
