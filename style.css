@@ -1,0 +1,82 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+  color: #222;
+}
+.hero {
+  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%);
+  color: #fff;
+  padding: 80px 0 60px 0;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+.hero-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.cta {
+  display: inline-block;
+  background: #ffb300;
+  color: #222;
+  padding: 0.75em 2em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1.5em;
+  transition: background 0.2s;
+}
+.cta:hover {
+  background: #ffa000;
+}
+.projects {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.project {
+  background: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  width: 300px;
+  padding: 1.5em;
+  text-align: left;
+}
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+.about, .contact {
+  padding: 40px 0;
+  text-align: center;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+@media (max-width: 900px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
